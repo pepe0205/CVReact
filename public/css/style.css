@@ -1,0 +1,249 @@
+   
+/* bài demo*/
+.yellow{
+    background-color: yellow; 
+}
+.red{
+    background-color: red;
+}
+/* thông số chung*/
+h3{
+    color: black;
+    
+}
+.MainContainer{
+    background-color: gray;
+}
+.clear{
+    clear: both;
+}
+.LeftCol{
+    overflow: auto;
+    float:left;
+    padding-left:5%;
+    padding-right:5%;
+    border-right: red;
+    width: 30%;
+    height: 100%;
+    position: fixed;
+    background-color:cornsilk;
+   
+}
+.RightCol{
+    overflow: auto;
+    float:right;
+    padding-right:5%;
+    border-right: red;
+    width: 70%;
+    background-color:whitesmoke
+}
+html{
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: larger;
+    color: rgba(109, 109, 109, 0.986);
+   
+}
+/* chỉnh tên và avater*/
+.fullAvatar{
+    padding-top:5%;
+}
+.fullName{
+    text-align: center;
+    color:rgb(186, 59, 0);
+    font-size: x-large;
+}
+.imgAvatar{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  
+    height: 200px;
+	border-radius: 50%;
+    box-shadow: 0 0 10px 1px rgb(186, 0, 0);
+ 
+}
+.Job{
+    text-align: center;
+    font-size: x-large;
+    color: rgba(109, 109, 109, 0.986);
+}
+/*sở thích*/
+
+.fav{
+    padding-left:5%;
+    display: inline-block;
+}
+.p_full{
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    
+}
+.p_content{
+    width: 100%;
+    max-width: 70%;
+    padding-top:2%;
+    padding-bottom:2%;
+    background-color: #f7f7f7;
+}
+/*----------------------------*/
+/* chỉnh thông tin cơ bản*/
+.icon{
+   padding-left:2%;
+   vertical-align: middle;
+}
+.infoText{
+    padding-left:5%;
+    display: inline-block;
+    
+   
+    
+}
+/*----------------------------*/
+/* chỉnh skill*/
+
+.skillh1{
+    color:rgb(186, 59, 0); 
+}
+* {box-sizing: border-box}
+
+.containerSkill {
+  width: 100%;
+  background-color: #ddd;
+}
+
+.skills {
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+}
+
+.s1 {width: 90%; background-color: #04AA6D;}
+.s2 {width: 80%; background-color: #2196F3;}
+.s3 {width: 65%; background-color: #f44336;}
+.s4 {width: 70%; background-color: #808080;}
+/*----------------------------*/
+/*nút click -----*/
+.button{
+    height: 25px;
+    width: 25px;
+    background-color: #bbb;
+    border-radius: 50%;
+}
+
+  .buttonMain{
+    position: fixed;
+    display: grid;
+    margin-top:20%;
+   margin-left:67%;
+    justify-content: center;
+    align-items: center;
+  }
+  /* những nút dot bên phải*/
+  .tool{
+    visibility: hidden;
+    width: 120px;
+    background-color: lightgray;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+  }
+   .tool1{
+   
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: 2%;
+    right:3%;
+  }
+  .tool2{
+ 
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: 26%;
+    right: 3%;
+  }
+  .tool3{
+    position: absolute;
+    z-index: 1;
+    top: 40%;
+    right: 3%;
+  }
+  .tool4{
+    position: absolute;
+    z-index: 1;
+    top: 64%;
+    right: 3%;
+  }
+  .button:hover .tool{
+    visibility: visible;
+  }
+  
+ /*---------------*/
+  
+  .expLBM,.expVBE,.expPro1,.expPro2{
+    border-width: 2px;
+    border-style: solid;
+    border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%,  rgba(179,179,179) 40%) 0 0 0 1;
+    padding-left:5%;
+  }
+   .expVBE>p::before {
+    content: "\2022";
+    color: grey;
+    font-weight: bold;
+   margin-left:-6%;
+  }
+  .expLBM>p::before {
+    content: "\2022";
+    color: grey;
+    font-weight: bold;
+   margin-left:-6%;
+  }
+  .expPro1>p::before {
+    content: "\2022";
+    color: grey;
+    font-weight: bold;
+   margin-left:-6%;
+  }
+  .expPro2>p::before {
+    content: "\2022";
+    color: grey;
+    font-weight: bold;
+   margin-left:-6%;
+  }
+  .addVBE,.addLBM,.addPro1,.addPro2{
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    margin-left:-7%;
+    border-radius: 50%;
+    background: #c00;
+    color: white;
+    border: none;
+    transition: 0.3s;
+    opacity: 0.6;
+  }
+  .addVBE:hover{   
+    opacity: 1;
+    border-radius: 50%;
+    color: #fff;
+  }
+  .addLBM:hover{   
+    opacity: 1;
+    border-radius: 50%;
+    color: #fff;
+  }
+  .addPro1:hover{   
+    opacity: 1;
+    border-radius: 50%;
+    color: #fff;
+  }
+  .addPro2:hover{   
+    opacity: 1;
+    border-radius: 50%;
+    color: #fff;
+  }
